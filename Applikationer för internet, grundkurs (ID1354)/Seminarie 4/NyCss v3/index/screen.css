@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* Screen CSS Document */
+
+/*body*/
+body{
+	margin: 0 auto;
+	font-family:verdana,helvetica,arial,sans-serif;
+	background-color: #fff;
+	
+}
+/*****/
+/*index page*/
+#overalImg{
+	margin-top: 40px;
+}
+.thickboxImg img{
+	padding: 5px;
+	width: 300px; 
+	height: 200px;
+	
+}
+.thickboxImg{
+	text-align: center;
+}
+/*****/
+/*navigation bar*/
+nav ul {
+	list-style: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+	}
+
+nav li{
+    display:inline;
+}
+nav a{
+	
+	text-align: center;
+    display: inline-block;
+    padding:10px;
+	color: #000;
+	height: 30px;
+	width: 100px;
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	padding-right: 2.35em;
+	padding-bottom: 0px;
+	padding-left: 2.2em;
+	background-color: #f1b6b8;
+}
+
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		
+		display: block;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -10px;
+		padding-top: 10px;
+		left: 0;
+		right: 0;
+	}
+
+
+nav ul li:hover a {
+	background-color:#000;
+	color: #fff;
+}
+		
+nav ul li ul li:hover a {
+		background-color:#f1b6b8;
+		color: #000;
+}
+/*****/
+
+/*Top bar*/
+#topbar{
+	
+	background-color:#f1b6b8;
+	width:100%;
+	height:100px;
+	color:#000;
+	padding-top:1px;
+	padding-bottom:6px;
+}
+
+	
+#logodiv{
+	padding-top:8px;
+	float:left;
+	position: absolute;
+	margin-left:50px;
+	padding-right:50px;
+	
+}
+	
+#homediv{
+	padding:6px 80px 0px 80px;	
+}
+
+#topmenu h1{
+	padding-top: 30px;
+	text-align: center;
+	
+	
+}
+/*****/
+	
+/*Lunch, Breakfast, Dinner*/
+div.img {
+	display:inline-block;
+	width: 320px;
+	height: 284px;
+	margin-top: 60px;
+	padding: 4px;
+    border: 1px solid #000;
+}	
+
+div.img img {
+	width: 300px;
+	height: 200px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+.img h3{
+	text-align: center;
+}
+
+div.img a:hover img {
+    border: 1px solid #000;
+}
+/*****/
+h1{
+color: #363636;
+text-align: center;
+margin: 0 auto;
+}
+
+/*contacts*/
+#wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrapper hr {
+	border-bottom-style: solid;
+ 	border-bottom-color: #333;
+}
+#wrapper #content {
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	padding-top: 20px;
+ 	padding-bottom:40px;
+ 	width: 940px;
+}
+#wrapper #content h2 {
+ 	font-size: 24px;
+ 	color: #000;
+ 	display: block;
+ 	border-bottom-width: 1px;
+ 	border-bottom-style: solid;
+ 	border-bottom-color: #333;
+	padding-bottom:20px;
+	margin-bottom:-30px;
+}
+
+ #center{
+	width: 960px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	margin-right:auto;
+	margin-left: auto;
+	
+}
+/*****/
+
+/*Calendar css*/
+#calendar table{
+	margin-top: 70px;
+
+}
+#calendar th{
+	background-color: #f1b6b8;
+}
+#calendar table, #calendar td, #calendar th{
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#calendar td{
+	background-color: #f1b6b8;
+	width: 175px;
+	height: 125px;
+	vertical-align: top;
+	text-align: left;
+}
+#calendar td img{
+
+	margin-left: 10%;
+	width: 150px;
+	height: 100px;
+}
+/*****/
+/*globalImg recipe pages*/
+	#globalImg{
+	margin-top: 40px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	#left{
+		width: 450px;
+		float: left;
+	}
+	#right{
+		width: 450px;
+		float: right;
+	}
+	#globalImg h2{
+	text-decoration: underline;
+}
+
+#globalImg h3{
+	margin-left: 20px;
+	margin-top: 19px;
+	font-size: 25px;
+}
+
+
+#globalImg img{
+	border-radius: 3px;
+	border: 1px solid #000;
+	margin-left: 20px;
+	width: 400px;
+	height: 300px;	
+}
+
+#undertext {
+	display: inline-block;
+
+}
+#comments {
+	margin-top: 100px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#comments #box {
+	display: block;
+	border: 1px solid #000;
+	width: 980px;
+	height: auto;
+	background-color: #f1b6b8;
+}
+#comments #box h5{
+	margin-left: 20px;
+}
+#box p{
+	margin-left: 20px;
+}
+/*Login button*/
+#login nav{
+    position: relative;
+    bottom: 75px;
+    
+}
+#login nav ul {
+	list-style: none;
+    margin:0;
+    padding:0;
+    text-align:right;
+ 
+	}
+
+#login nav li{
+    display:inline;
+}
+#login nav a{
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    margin-right: 0px;
+   
+    
+}
+/*--------------------------------*/
+
+#loginForm{
+	width: 500px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1b6b8;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+#loginDesign{
+	text-align: center;
+	position: relative;
+               top:40%;
+	margin:auto;
+}
+input {
+text-align: cetner;
+font-size: 20px;
+border:1px solid black;
+padding: 5px;
+}
+
+#button input
+{
+	margin-top: 10px;
+	font-size: 30px;
+	background-color:#f1b6b8;
+	border-radius: 5px;
+}
+#button input:hover{
+	background-color: #000;
+	color: white;
+}
+#textecho{
+        text-align: center;
+	position: relative;
+	top:39%;
+	margin:auto;
+
+}
+
+/* php css*/
+#user{
+  font-weight: bold;
+    
+}
+
+#DELbutton ul{
+     margin-top: 10px;
+    text-align: left;
+}
+#DELbutton a{
+   
+    height: 27px;
+    width: 45px;
+}
+

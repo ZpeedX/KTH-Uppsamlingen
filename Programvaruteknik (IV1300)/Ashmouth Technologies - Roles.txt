@@ -1,0 +1,31 @@
+Alex
+ - CEO
+ - Member of BOD
+Fredrik
+ - Marketing & Finance Manager
+ - Measurement Manager
+ - Member of BOD
+Dima
+ - Business Manager
+ - Business Analyst
+ - Product Manager
+ - Member of BOD
+Philippe
+ - Architect
+ - Designer
+ - Member of BOD
+Eric
+ - Quality Manager
+ - Process Manager
+ - Member of BOD
+Rikard
+ - Testing Manager
+ - Tester
+ - Developer
+ - Configuarion Manager
+ - Member of BOD
+Evan
+ - Project Manager
+ - Documentation Manager
+ - Developer
+ - Tester
