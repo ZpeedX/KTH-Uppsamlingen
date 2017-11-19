@@ -1,0 +1,35 @@
+The directory /home contains 0 files
+#The directory /home: number of files smaller than 2^k:
+#k	number
+1	2
+2	2
+3	2
+4	11
+5	24
+6	23
+7	97
+8	160
+9	161
+10	200
+11	676
+12	648
+13	648
+14	524
+15	337
+16	308
+17	200
+18	142
+19	81
+20	59
+21	50
+22	12
+23	10
+24	3
+25	5
+26	2
+27	0
+28	1
+29	1
+30	0
+31	0
+32	0

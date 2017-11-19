@@ -1,0 +1,4 @@
+select(X,[X|Xs],Xs).
+select(X,[Y|Ys],[Y|Zs]) :-
+    not(X = Y),
+    select(X,Ys,Zs).

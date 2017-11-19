@@ -1,0 +1,7 @@
+double([],[]).
+
+double([X|Xs],[X|Ys]):-
+    double([X|Xs],Ys).
+
+double([_|Xs],Y):-
+       double(Xs,Y).

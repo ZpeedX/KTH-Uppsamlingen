@@ -1,0 +1,714 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EPM3032ALC44-10 Package PLCC44
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "codelock")
+  (DATE "12/09/2015 14:13:21")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\clk\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (2100:2100:2100) (2100:2100:2100))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector2\~17\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm0[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm0[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm0[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm0[3] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm4[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm4[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm4[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm4[3] pexpout (1200:1200:1200) (1200:1200:1200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\K\[2\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\K\[3\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\R\[3\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\R\[1\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\R\[2\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\K\[1\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\R\[4\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector2\~8\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pexpin combout (4400:4400:4400) (4400:4400:4400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\nextstate\[2\]\~28\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[3] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\state\[2\]\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] regin (3300:3300:3300) (3300:3300:3300))
+        (IOPATH fbkin regin (5400:5400:5400) (5400:5400:5400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_mcell_register")
+    (INSTANCE \\state\[2\]\\.preg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1300:1300:1300) (1300:1300:1300))
+        (IOPATH (posedge clk) regout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (2800:2800:2800))
+      (HOLD datain (posedge clk) (1300:1300:1300))
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector5\~8\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[0] pexpout (1200:1200:1200) (1200:1200:1200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector5\~1\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pexpin combout (4400:4400:4400) (4400:4400:4400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE \\Selector0\~3sexp1\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[1] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[2] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[3] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[4] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[5] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[6] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[7] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[8] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[9] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[10] dataout (4000:4000:4000) (4000:4000:4000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE \\Selector0\~3sexp2\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[1] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[2] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[3] dataout (4000:4000:4000) (4000:4000:4000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE \\Selector0\~3sexp3\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[1] dataout (4000:4000:4000) (4000:4000:4000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE \\Selector0\~3sexp4\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[1] dataout (4000:4000:4000) (4000:4000:4000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_sexp")
+    (INSTANCE \\Selector0\~3sexp5\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain[0] dataout (4000:4000:4000) (4000:4000:4000))
+        (IOPATH datain[1] dataout (4000:4000:4000) (4000:4000:4000))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\nextstate\[3\]\~34\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[5] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\state\[3\]\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] regin (3300:3300:3300) (3300:3300:3300))
+        (IOPATH fbkin regin (5400:5400:5400) (5400:5400:5400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_mcell_register")
+    (INSTANCE \\state\[3\]\\.preg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1300:1300:1300) (1300:1300:1300))
+        (IOPATH (posedge clk) regout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (2800:2800:2800))
+      (HOLD datain (posedge clk) (1300:1300:1300))
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector7\~1\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[1] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\nextstate\[4\]\~40\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\state\[4\]\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] regin (3300:3300:3300) (3300:3300:3300))
+        (IOPATH fbkin regin (5400:5400:5400) (5400:5400:5400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_mcell_register")
+    (INSTANCE \\state\[4\]\\.preg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1300:1300:1300) (1300:1300:1300))
+        (IOPATH (posedge clk) regout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (2800:2800:2800))
+      (HOLD datain (posedge clk) (1300:1300:1300))
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector6\~16\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[1] pexpout (1200:1200:1200) (1200:1200:1200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector6\~9\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pexpin combout (4400:4400:4400) (4400:4400:4400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\nextstate\[0\]\~46\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\state\[0\]\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] regin (3300:3300:3300) (3300:3300:3300))
+        (IOPATH fbkin regin (5400:5400:5400) (5400:5400:5400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_mcell_register")
+    (INSTANCE \\state\[0\]\\.preg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1300:1300:1300) (1300:1300:1300))
+        (IOPATH (posedge clk) regout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (2800:2800:2800))
+      (HOLD datain (posedge clk) (1300:1300:1300))
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector4\~17\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm1[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm2[2] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[0] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[1] pexpout (1200:1200:1200) (1200:1200:1200))
+        (IOPATH pterm3[2] pexpout (1200:1200:1200) (1200:1200:1200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Selector4\~10\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (PORT pexpin (0:0:0) (0:0:0))
+        (IOPATH pterm0[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm0[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[9] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[10] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[2] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[3] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[4] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[5] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[6] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[7] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm4[8] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pexpin combout (4400:4400:4400) (4400:4400:4400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\nextstate\[1\]\~22\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm2[1] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm3[1] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\state\[1\]\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] regin (3300:3300:3300) (3300:3300:3300))
+        (IOPATH fbkin regin (5400:5400:5400) (5400:5400:5400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_mcell_register")
+    (INSTANCE \\state\[1\]\\.preg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1300:1300:1300) (1300:1300:1300))
+        (IOPATH (posedge clk) regout (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (2800:2800:2800))
+      (HOLD datain (posedge clk) (1300:1300:1300))
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\Equal10\~6\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4600:4600:4600) (4600:4600:4600))
+        (IOPATH pterm1[1] combout (4600:4600:4600) (4600:4600:4600))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\q\[1\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\q\[2\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\q\[3\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\q\[4\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\UNLOCK\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\q\[0\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+)

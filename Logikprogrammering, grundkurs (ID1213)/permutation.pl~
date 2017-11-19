@@ -1,0 +1,9 @@
+
+perm([],[]).
+perm(List, [H|Perm]):-
+    select(H, List, Rest),
+    perm(Rest, Perm).
+
+
+permute(Xs, Ys):-
+    findall(Ls, perm(Xs,Ls) ,Ys).

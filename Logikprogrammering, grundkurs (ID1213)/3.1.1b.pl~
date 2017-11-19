@@ -1,0 +1,20 @@
+even(0).
+
+even(s(X)) :-
+    natural_number(s(X)).
+odd(s(X)) :-
+    natural_number(X).
+
+create(X,0) :-
+    natural_number(X).
+
+create(_,0).
+
+create(X, Y) :-
+    M is Y - 1,
+    create(s(X), M).
+
+natural_number(0).
+
+natural_number(s(s(X))) :-
+    natural_number(X).

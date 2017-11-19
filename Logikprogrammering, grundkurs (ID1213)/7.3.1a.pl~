@@ -1,0 +1,2 @@
+sublist(Xs, AsXsBs) :-
+    apend(As,Xs, AsXs), append(AsXs, Bs, AsXsBs).

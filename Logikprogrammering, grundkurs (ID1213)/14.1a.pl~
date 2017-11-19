@@ -1,0 +1,13 @@
+square_root(N, L) :-
+    between1(1, N, L),
+    N >= L**2,
+    N < (L+1)**2,! .
+
+
+between1(I,J,I) :-
+    I =< J.
+
+between1(I,J,K):-
+    I < J,
+    I1 is I+1,
+    between(I1, J,K).

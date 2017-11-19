@@ -1,0 +1,7 @@
+union_intersect([X|Xs],Ys,Us,[X|Is]) :-
+    member(X,Ys), union_intersect(Xs,Ys,Us,Is).
+
+union_intersect([X|Xs],Ys,[X|Us],Is):-
+    not(member(X,Ys)), union_intersect(Xs,Ys,Us,Is).
+
+union_intersect([],Ys,Ys,[]).

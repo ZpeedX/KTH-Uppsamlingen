@@ -1,0 +1,10 @@
+normalized_sum(A+B):-!,
+    constant(A),
+    normalized_sum(B).
+
+normalized_sum(X):-
+    constant(X).
+
+constant(a).
+constant(b).
+constant(c).

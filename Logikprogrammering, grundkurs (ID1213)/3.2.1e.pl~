@@ -1,0 +1,6 @@
+suma([], 0).
+
+suma([X|Xs], S) :-
+    sum(Xs, F),
+    plus(X, F, S).
+
