@@ -1,0 +1,64 @@
+Uppgift 1
+The string: 0x601060
+--> 00601000 - 00602000 rw-p 00001000 08:01 1311805
+
+the constant integer: 0x400848
+--> 00400000 - 00401000 r-xp 00000000 08:01 1311805
+
+the code: 0x4006ed
+--> 00400000 - 00401000 r-xp 00000000 08:01 1311805
+
+the location of foo: 0x7ffd0e1d3658
+--> 7ffd0e1b4000-7ffd0e1d5000 rw-p 00000000 00:00 0 [stack]
+
+fo pointing to: 0x786010 
+--> 00786000-007a7000 rw-p 00000000 00:00 0 [heap]
+
+the location foo is pointing to contains: 42 
+
+Uppgift 1.1
+
+ 0x7ffe2402f438		0xcccccccccccccccc
+ 0x7ffe2402f440		0x7ffe2402f440
+ 0x7ffe2402f448		0xf1890455943cf200
+ 0x7ffe2402f450		0x7ffe2402f4b0
+ 0x7ffe2402f458		0x400682
+ 0x7ffe2402f460		0xa7
+ 0x7ffe2402f468		0x7ffe2402f4d0
+ 0x7ffe2402f470		0xa6
+ 0x7ffe2402f478		0xa5
+ 0x7ffe2402f480		0xa4
+ 0x7ffe2402f488		0xa3
+ 0x7ffe2402f490		0xa2
+ 0x7ffe2402f498		0xa1
+ 0x7ffe2402f4a0		0x1
+ 0x7ffe2402f4a8		0xbbbbbbbbbbbbbbbb
+ 0x7ffe2402f4b0		0x7ffe2402f4e0
+ 0x7ffe2402f4b8		0x4006dd
+ 0x7ffe2402f4c0		0xa7
+ 0x7ffe2402f4c8		0x7ffe2402f4d0
+ 0x7ffe2402f4d0		0xaaaaaaaaaaaaaaaa
+
+
+Uppgift 2.1:
+int main () {
+	char *heap = malloc ( 20 ); 			//Sparar 20 platser i heap
+	*heap = 0x61; 					// tilldelar den första platsen  i heap variabeln värdet 0x61
+	printf( ”heap pointing to: 0x%x\n” , *heap );   //skriver ut första platsen i variabeln heap 
+	free( heap ); 					//free variabeln heap
+	char *foo = malloc ( 20 ); 			//skapar en variabel med 20 platser [på samma ställe som heap hade skapat]
+	*foo = 0x62; 					//tilldelar den första platsen  i foo variabeln värdet 0x62
+	printf( ”foo pointing to : 0x%x\n” , *foo ); 	//skriver ut första platsen i variabeln foo
+	*heap = 0x63; 					//heap variabeln hade blivit friat men den kommer fortfarande ihåg dens adress vilket leder till att den skriver över foo variabelns värde
+	printf( ”foo pointing to : 0x%x\n” , *foo ); 	//skriver ut första platsen i variabeln foo/heap
+	return 0;
+}
+
+0101 0001
+
+uppgift 2.2:
+8 bytes overhead & 1 byte for how much malloc is allocated123
+If the size of malloc + overhead + 1 byte is bigger than 0xXX it will add 16bytes
+
+uppgift 2.3:
+When you free an allocated place in heap, the space will be taken by some random processor (not always).

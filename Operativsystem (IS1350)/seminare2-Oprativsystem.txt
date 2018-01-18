@@ -1,0 +1,9 @@
+• Hur påverkar det mängden minne som vi behöver?
+Best fit har har bättre minnesallocering eftersom den kommer hitta den bästa chunken först
+ medan first fit kan inte alltid garanterat hitta bästa chunken då den tar den första den hittar som passar.
+• Hur långt ifrån är vi den allokerare som erbjuds av standardbiblioteket?
+
+• Vad påverkar listans längd och ur lång är den i de typfall som du arbetet med?
+det beror på hur många block den tar från chunk listan
+best fit har mindre lista 
+first hit högre lista 
