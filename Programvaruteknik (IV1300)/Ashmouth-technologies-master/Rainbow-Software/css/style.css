@@ -1,0 +1,30 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#myCarousel{
+    margin-top: -19px;
+}
+#visitors {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: auto;
+    word-wrap: break-word;
+    width: 100px;
+    padding: 10px;
+    border: 1px gray solid;
+
+}

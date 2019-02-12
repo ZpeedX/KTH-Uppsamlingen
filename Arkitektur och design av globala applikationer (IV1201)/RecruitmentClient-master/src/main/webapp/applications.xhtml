@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="masterTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="preRender">
+        <f:metadata>
+            <f:viewAction action="#{applicationListing.initPage()}"/>
+        </f:metadata>
+    </ui:define>
+    <ui:define name="head">
+        <link rel="stylesheet" href="resources/css/applications.css"/>
+        <link  rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css"/>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"/>
+        <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"/>
+    </ui:define>
+    <ui:define name="body">
+
+        <div class="container">
+            <h1 class="title col-xs-12">#{msg['search_title']}</h1>
+            <h:form class="form col-xs-12" id="searchForm">
+                <div class="form-group" >
+                    <label for="date">#{msg['app_submission_date']}</label>
+                    <h:inputText value="#{applicationListing.regDate}" class="form-control" id="date" converterMessage="#{msg['dateFormatErrorMsg']} #{msg['localeDate']}" a:placeholder="#{msg['localeDate']}">
+                        <f:convertDateTime type="date"  dateStyle="short" />
+                    </h:inputText>
+                    <h:message id="dateErrMsg" for="date" style="color:red"/>
+                </div>
+                <div class="form-group col-xs-6" style="padding-left: 0">
+                    <label for="dateFrom">#{msg['availability_form']}</label>
+                    <h:inputText value="#{applicationListing.periodFrom}" class="form-control" id="dateFrom" converterMessage="#{msg['dateFormatErrorMsg']} #{msg['localeDate']}" a:placeholder="#{msg['localeDate']}">
+                        <f:convertDateTime type="date"  dateStyle="short" />
+                    </h:inputText>
+                    <h:message id="dateFromErrMsg" for="dateFrom" style="color:red"/>
+                </div>
+                <div class="form-group col-xs-6" style="padding-right: 0">
+                    <label for="dateTo">#{msg['availability_to']}</label>
+                    <h:inputText value="#{applicationListing.periodTo}" class="form-control" id="dateTo" converterMessage="#{msg['dateFormatErrorMsg']} #{msg['localeDate']}" a:placeholder="#{msg['localeDate']}">
+                        <f:convertDateTime type="date"  dateStyle="short" />
+                    </h:inputText>
+                    <h:message id="dateToErrMsg" for="dateTo" style="color:red"/>
+                </div>
+                <div class="form-group">
+                    <label for="sell">#{msg['competence']}</label>
+                    <h:selectOneMenu  value="#{applicationListing.competence}" class="form-control" id="sel1" >
+                        <f:selectItem itemValue="0" itemLabel="#{msg['competence_any']}"/>
+                        <f:selectItems value="#{applicationListing.cmptList}" var="comp" itemLabel="#{comp.name}" itemValue="#{comp.competenceId}"/>
+                    </h:selectOneMenu>
+                </div>
+                <div class="form-group">
+                    <label for="name">#{msg['applicant_name']}</label>
+                    <h:inputText value="#{applicationListing.firstname}" class="form-control" id="name"/>
+                </div>
+                <h:commandButton id="searchBtn" class="btn btn-default" value="#{msg['search_button']}" action="#{applicationListing.searchApplications}"/>
+            </h:form>
+        </div>
+        <div class="container">
+            <h1 class="title">#{msg['Applications_title']}</h1>
+            <div class="col-md-12">
+
+                <h:dataTable id="appListingTable" value="#{applicationListing.applications}" var="app" 
+                             class="table table-striped table-bordered nowrap"
+                             >
+                    <h:column>
+                        <f:facet name="header" class="hidden-xs" >#{msg['column_first_name']}</f:facet>
+                            #{app.firstname}
+                    </h:column>                            
+                    <h:column>
+                        <f:facet name="header">#{msg['column_surname']}</f:facet>
+                            #{app.surname}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">#{msg['column_email']}</f:facet>
+                            #{app.email}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">#{msg['column_app_detail']}</f:facet>
+                        <h:link outcome="application_overview" value="#{msg['column_value_app_detail']}">
+                            <f:param name="appId" value="#{app.applicationId}" />
+                        </h:link>
+                    </h:column>
+                </h:dataTable>
+
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#appListingTable').DataTable({
+                    "language": {
+                        "lengthMenu": "#{msg['lengthMenu']}",
+                        "emptyTable": "#{msg['emptyTable']}",
+                        "info": "#{msg['info']}",
+                        "InfoEmpty": "#{msg['infoEmpty']}",
+                        "infoFiltered": "#{msg['infoFiltered']}",
+                        "loadingRecords": "#{msg['loadingRecords']}",
+                        "processing": "#{msg['processing']}",
+                        "search": "#{msg['table_search']}",
+                        "zeroRecords": "#{msg['zeroRecords']}",
+                        "paginate": {
+                            "first": "#{msg['paginate_first']}",
+                            "last": "#{msg['paginate_last']}",
+                            "next": "#{msg['paginate_next']}",
+                            "previous": "#{msg['paginate_previous']}"
+                        },
+                        "araia": {
+                            "sortAscending": "#{msg['aria_sortAscending']}",
+                            "sortDescending": "#{msg['aria_sortDescending']}"
+                        }
+                    }
+                });
+            });
+        </script>
+    </ui:define>
+</ui:composition>

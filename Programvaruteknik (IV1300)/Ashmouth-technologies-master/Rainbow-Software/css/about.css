@@ -1,0 +1,31 @@
+body{
+padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+footer {
+    margin: 50px 0;
+}
+img{
+    border-radius: 40px;
+    width:350px;
+    margin: auto;
+}
+h1{
+	font-family: 'Tangerine', serif;
+    font-size: 70px;
+    color:#ff0040;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+p.lead{
+	font-family: 'Vollkorn', serif;
+	font-size: 20px;
+	color: black;
+
+}
+li.face {
+    color: #4060A5;
+}
+#myCarousel{
+    margin-top: -19px;
+}

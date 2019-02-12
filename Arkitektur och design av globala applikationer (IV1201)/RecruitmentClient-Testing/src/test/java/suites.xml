@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite" parallel="tests" thread-count="4">
+    
+    <!--<test name="test"  preserve-order="true">
+        <classes>
+            <class name="TestClass">
+                <methods>
+                    <include name="testRegisterLink" />                    
+                    <include name="testRegister" />
+                    <include name="testLogout" />
+                    
+                    <include name="testLogin" />
+                    <include name="testParticipantLinks"/>
+                    <include name="testApplyPage"/>
+                    
+                    <include name="testLogout" />
+                    <include name="testRecruiterLogin" />
+                    <include name="testRecruiterLinks" />
+                    <include name="testApplicationsPage" />
+                    <include name="testAppOverviewPage" />
+
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    <test name="testChrome"  preserve-order="true" parallel="false">
+        <parameter name="browser" value="chrome" />
+        <parameter name="recUserName" value="qwer"/>
+        <parameter name="recUserPassword" value="qwer"/>
+
+        <classes>
+            <class name="RunTests">
+                <methods>
+                    <include name="testRegisterLink" />                    
+                    <include name="testRegister" />
+
+                    <include name="testLogout" />
+                    <include name="testLogin" />
+
+                    <include name="testParticipantLinks" />
+                    <include name="testApplyPage"/>    
+                    <include name="testParticipantLogout" />        
+
+                    <include name="testRecruiterLogin" />
+
+                    <include name="testRecruiterLinks"/>    
+                    <include name="testApplicationsPage" />     
+                    <include name="testAppOverviewPage" />
+                    <include name="testRecruiterLogout" /> 
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testFirefox"  preserve-order="true" parallel="false">
+        <parameter name="browser" value="firefox" />
+        <parameter name="recUserName" value="recruiter"/>
+        <parameter name="recUserPassword" value="1234"/>
+        <classes>
+            <class name="RunTests">
+                <methods>
+                    <include name="testRegisterLink" />                    
+                    <include name="testRegister" />
+
+                    <include name="testLogout" />
+                    <include name="testLogin" />
+
+                    <include name="testParticipantLinks" />
+                    <include name="testApplyPage"/>    
+                    <include name="testParticipantLogout" />        
+
+                    <include name="testRecruiterLogin" />
+
+                    <include name="testRecruiterLinks"/>    
+                    <include name="testApplicationsPage" />     
+                    <include name="testAppOverviewPage" />    
+                    <include name="testRecruiterLogout" /> 
+    
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

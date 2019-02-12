@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="24" passed="24">
+  <reporter-output>
+  </reporter-output>
+  <suite name="suite" duration-ms="75003" started-at="2018-03-11T00:35:32Z" finished-at="2018-03-11T00:36:47Z">
+    <groups>
+    </groups>
+    <test name="testChrome" duration-ms="68968" started-at="2018-03-11T00:35:32Z" finished-at="2018-03-11T00:36:41Z">
+      <class name="RunTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:RunTests@2733414d]" name="setUp" is-config="true" duration-ms="3715" started-at="2018-03-11T01:35:32Z" finished-at="2018-03-11T01:35:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRegisterLink()[pri:0, instance:RunTests@2733414d]" name="testRegisterLink" duration-ms="317" started-at="2018-03-11T01:35:36Z" finished-at="2018-03-11T01:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterLink -->
+        <test-method status="PASS" signature="testRegister()[pri:0, instance:RunTests@2733414d]" name="testRegister" duration-ms="11009" started-at="2018-03-11T01:35:36Z" finished-at="2018-03-11T01:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method status="PASS" signature="testLogout()[pri:0, instance:RunTests@2733414d]" name="testLogout" duration-ms="1291" started-at="2018-03-11T01:35:47Z" finished-at="2018-03-11T01:35:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:RunTests@2733414d]" name="testLogin" duration-ms="1594" started-at="2018-03-11T01:35:49Z" finished-at="2018-03-11T01:35:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testParticipantLinks()[pri:0, instance:RunTests@2733414d]" name="testParticipantLinks" duration-ms="727" started-at="2018-03-11T01:35:50Z" finished-at="2018-03-11T01:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParticipantLinks -->
+        <test-method status="PASS" signature="testApplyPage()[pri:0, instance:RunTests@2733414d]" name="testApplyPage" duration-ms="13558" started-at="2018-03-11T01:35:51Z" finished-at="2018-03-11T01:36:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplyPage -->
+        <test-method status="PASS" signature="testParticipantLogout()[pri:0, instance:RunTests@2733414d]" name="testParticipantLogout" duration-ms="2411" started-at="2018-03-11T01:36:05Z" finished-at="2018-03-11T01:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParticipantLogout -->
+        <test-method status="PASS" signature="testRecruiterLogin(java.lang.String, java.lang.String)[pri:0, instance:RunTests@2733414d]" name="testRecruiterLogin" duration-ms="3673" started-at="2018-03-11T01:36:07Z" finished-at="2018-03-11T01:36:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLogin -->
+        <test-method status="PASS" signature="testRecruiterLinks()[pri:0, instance:RunTests@2733414d]" name="testRecruiterLinks" duration-ms="3848" started-at="2018-03-11T01:36:11Z" finished-at="2018-03-11T01:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLinks -->
+        <test-method status="PASS" signature="testApplicationsPage()[pri:0, instance:RunTests@2733414d]" name="testApplicationsPage" duration-ms="12890" started-at="2018-03-11T01:36:15Z" finished-at="2018-03-11T01:36:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplicationsPage -->
+        <test-method status="PASS" signature="testAppOverviewPage(java.lang.String)[pri:0, instance:RunTests@2733414d]" name="testAppOverviewPage" duration-ms="11991" started-at="2018-03-11T01:36:27Z" finished-at="2018-03-11T01:36:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qwer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppOverviewPage -->
+        <test-method status="PASS" signature="testRecruiterLogout()[pri:0, instance:RunTests@2733414d]" name="testRecruiterLogout" duration-ms="1239" started-at="2018-03-11T01:36:39Z" finished-at="2018-03-11T01:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:RunTests@2733414d]" name="tearDown" is-config="true" duration-ms="702" started-at="2018-03-11T01:36:41Z" finished-at="2018-03-11T01:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RunTests -->
+    </test> <!-- testChrome -->
+    <test name="testFirefox" duration-ms="75003" started-at="2018-03-11T00:35:32Z" finished-at="2018-03-11T00:36:47Z">
+      <class name="RunTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:RunTests@1c1f348f]" name="setUp" is-config="true" duration-ms="4519" started-at="2018-03-11T01:35:32Z" finished-at="2018-03-11T01:35:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRegisterLink()[pri:0, instance:RunTests@1c1f348f]" name="testRegisterLink" duration-ms="300" started-at="2018-03-11T01:35:37Z" finished-at="2018-03-11T01:35:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterLink -->
+        <test-method status="PASS" signature="testRegister()[pri:0, instance:RunTests@1c1f348f]" name="testRegister" duration-ms="10072" started-at="2018-03-11T01:35:37Z" finished-at="2018-03-11T01:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegister -->
+        <test-method status="PASS" signature="testLogout()[pri:0, instance:RunTests@1c1f348f]" name="testLogout" duration-ms="1531" started-at="2018-03-11T01:35:47Z" finished-at="2018-03-11T01:35:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:RunTests@1c1f348f]" name="testLogin" duration-ms="1716" started-at="2018-03-11T01:35:49Z" finished-at="2018-03-11T01:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testParticipantLinks()[pri:0, instance:RunTests@1c1f348f]" name="testParticipantLinks" duration-ms="812" started-at="2018-03-11T01:35:51Z" finished-at="2018-03-11T01:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParticipantLinks -->
+        <test-method status="PASS" signature="testApplyPage()[pri:0, instance:RunTests@1c1f348f]" name="testApplyPage" duration-ms="18625" started-at="2018-03-11T01:35:51Z" finished-at="2018-03-11T01:36:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplyPage -->
+        <test-method status="PASS" signature="testParticipantLogout()[pri:0, instance:RunTests@1c1f348f]" name="testParticipantLogout" duration-ms="2875" started-at="2018-03-11T01:36:10Z" finished-at="2018-03-11T01:36:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParticipantLogout -->
+        <test-method status="PASS" signature="testRecruiterLogin(java.lang.String, java.lang.String)[pri:0, instance:RunTests@1c1f348f]" name="testRecruiterLogin" duration-ms="3797" started-at="2018-03-11T01:36:13Z" finished-at="2018-03-11T01:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[recruiter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLogin -->
+        <test-method status="PASS" signature="testRecruiterLinks()[pri:0, instance:RunTests@1c1f348f]" name="testRecruiterLinks" duration-ms="3649" started-at="2018-03-11T01:36:17Z" finished-at="2018-03-11T01:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLinks -->
+        <test-method status="PASS" signature="testApplicationsPage()[pri:0, instance:RunTests@1c1f348f]" name="testApplicationsPage" duration-ms="12041" started-at="2018-03-11T01:36:20Z" finished-at="2018-03-11T01:36:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplicationsPage -->
+        <test-method status="PASS" signature="testAppOverviewPage(java.lang.String)[pri:0, instance:RunTests@1c1f348f]" name="testAppOverviewPage" duration-ms="13304" started-at="2018-03-11T01:36:32Z" finished-at="2018-03-11T01:36:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppOverviewPage -->
+        <test-method status="PASS" signature="testRecruiterLogout()[pri:0, instance:RunTests@1c1f348f]" name="testRecruiterLogout" duration-ms="1453" started-at="2018-03-11T01:36:46Z" finished-at="2018-03-11T01:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecruiterLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:RunTests@1c1f348f]" name="tearDown" is-config="true" duration-ms="300" started-at="2018-03-11T01:36:47Z" finished-at="2018-03-11T01:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RunTests -->
+    </test> <!-- testFirefox -->
+  </suite> <!-- suite -->
+</testng-results>
